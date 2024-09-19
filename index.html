@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind CDN -->
+
+</head>
+<body>
+    <div class="containar w-[700px] mx-auto mt-14 border 4px bg-red-200 rounded-md text-center  ">
+        <h1 class="text-4xl font-bold">To <span class="text-fuchsia-900 text-opacity-8">DO</span> <span class="text-violet-700">List</span></h1>
+        <div class="mt-5 mb-5">
+            <input id="inputText" class="w-[350px] h-11 rounded-md pl-5 outline-none hover:focus:outline-pink-300" type="text" placeholder="type here.........">
+            <button id="btn-add" class="btn btn-sm ml-3 bg-green-900 text-white hover:bg-lime-700">Add</button>
+            
+        </div>
+       
+        <div>
+            <table class="table">
+                <thead>
+                    <tr class="">
+                        <th>Number </th>
+                        <th>Description </th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                
+                <tbody id="defaultText">
+
+                </tbody>
+            </table>
+            <div class="text-end">
+                <button id="clear-btn" class="btn btn-error btn-xs mt-4 bg-none">
+                  Clear All
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./js/toDo.js"></script>
+</body>
+</html>
